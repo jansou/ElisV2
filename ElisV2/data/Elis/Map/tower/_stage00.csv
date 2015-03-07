@@ -1,0 +1,4 @@
+tutorial,,,,,,
+setstartpos,stage00,528,557,,,
+door,128,685,stage01,200,2298,Tbossdoor.png
+door,2800,470,stage06,128,766,tdoor.png

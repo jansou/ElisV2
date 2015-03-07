@@ -1,0 +1,4 @@
+tutorial,,,,,,
+setStartpos,stage01,128,641,,,
+door,5590,766,stage02,330,487,Cdoor.png
+showlogo,logotower,,,,,

@@ -1,0 +1,66 @@
+﻿2015/03/07 14:23:20 にビルドを開始しました。
+     1>ノード 2 上のプロジェクト "C:\Users\akira\Desktop\projects\ElisV2\ElisV2\ElisV2.vcxproj" (Build ターゲット)。
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /Zi /nologo /W4 /WX- /sdl /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _WINDOWS /D _UNICODE /D UNICODE /Gm- /EHsc /MT /GS /Gy /arch:SSE2 /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt ELUI.cpp
+         ELUI.cpp
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\akira\Desktop\projects\ElisV2\Release\ElisV2.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\akira\Desktop\projects\ElisV2\Release\ElisV2.pdb" /SUBSYSTEM:WINDOWS /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\akira\Desktop\projects\ElisV2\Release\ElisV2.lib" /MACHINE:X86 /SAFESEH Release\RC.res
+         Release\ELAttack.obj
+         Release\ELDoor.obj
+         Release\ELEnemyInfo.obj
+         Release\ELBlockMaker.obj
+         Release\ELAirsnake.obj
+         Release\ELBigslime.obj
+         Release\ELBluecap.obj
+         Release\ELBoneman.obj
+         Release\ELDarkbrave.obj
+         Release\ELRaven.obj
+         Release\ELRavenAcross.obj
+         Release\ELRedcap.obj
+         Release\ELSeaserpent.obj
+         Release\ELSharkman.obj
+         Release\ELSlime.obj
+         Release\ELSlimeB.obj
+         Release\ELSlimeD.obj
+         Release\ELSlimeG.obj
+         Release\ELSlimeR.obj
+         Release\ELSlimeW.obj
+         Release\ELTentacle.obj
+         Release\ELEvent.obj
+         Release\ELFade.obj
+         Release\Elis.obj
+         Release\ELItem.obj
+         Release\ELMap.obj
+         Release\ELMyCamera.obj
+         Release\ELMyCursor.obj
+         Release\ELObjectInfo.obj
+         Release\ELBlock.obj
+         Release\ELMagicBlock.obj
+         Release\ELMoveplate.obj
+         Release\ELPlayer.obj
+         Release\ELArrow.obj
+         Release\ELCurveAxe.obj
+         Release\ELElisFire.obj
+         Release\ELElisIce.obj
+         Release\ELElisShoot1.obj
+         Release\ELElisShoot2.obj
+         Release\ELElisShoot3.obj
+         Release\ELElisWind.obj
+         Release\ELFirebreath.obj
+         Release\ELLongIce.obj
+         Release\ELRockfall.obj
+         Release\ELSwordrain.obj
+         Release\ELUpperTentacle.obj
+         Release\ELStageSelect.obj
+         Release\ELTalk.obj
+         Release\ELTitle.obj
+         Release\ELUI.obj
+         Release\Main.obj
+         コード生成しています。
+         コード生成が終了しました。
+         ElisV2.vcxproj -> C:\Users\akira\Desktop\projects\ElisV2\Release\ElisV2.exe
+     1>プロジェクト "C:\Users\akira\Desktop\projects\ElisV2\ElisV2\ElisV2.vcxproj" (Build ターゲット) のビルドが完了しました。
+
+ビルドに成功しました。
+
+経過時間 00:00:32.43

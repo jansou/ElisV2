@@ -1,0 +1,3 @@
+player,walkto,目的地x,スピード,//目的地xまで横に歩かせる
+plyer,walktowithcamera,目的地x,スピード,//カメラも付いてくる
+enemy,ready,,,//行動"ready"を敵に行わせる

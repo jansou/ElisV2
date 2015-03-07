@@ -1,0 +1,1243 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+<title>ElisV2 Log</title>
+<style>
+body		{ background-color: #18202A; font-family: 'Segoe UI','メイリオ','Meiryo','ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','Osaka','ＭＳ Ｐゴシック','MS PGothic','Arial',sans-serif; }
+h2			{ color: #FFEEDD; text-align: center; }
+p			{ margin: 0px 12% 0px; padding: 5px 20px 5px; font-size: 14px; }
+p.error		{ background: #F03000; color: #000011; }
+p.fail		{ background: #E08000; color: #001122; }
+p.warning	{ background: #D0D020; color: #001133; }
+p.script	{ background: #20AA4A; color: #FFEEFF; }
+p.app		{ background: #202A2A; color: #FFEEDD; }
+p.info		{ background: #000A0A; color: #FFEEDD; }
+p.debug		{ background: #001F2F; color: #FFEEDD; }
+p.advice	{ background: #000A0A; color: #FFEEDD; }
+p.resource	{ background: #008A20; color: #FFEEDD; }
+p.credit0	{ color: #FFEEDD; text-align: center; font-size: 20px; }
+p.credit1	{ color: #FFEEDD; text-align: center; font-size: 12px; }
+p.credit2	{ color: #AA9988; text-align: center; font-size: 9px; }
+</style>
+</head>
+<body>
+<h2>ElisV2 Log</h2>
+<p class="info">アプリケーションを開始します。</p>
+<p class="info">2015/3/4 12:45:02</p>
+<p class="info">エンジンを初期化します。</p>
+<p class="info">Siv3D Engine version January 2015 v3</p>
+<p class="info">SSE3/SSE4.1/SSE4.2 をサポート</p>
+<p class="info">AVX をサポート</p>
+<p class="info">ウィンドウクラスを登録しました。</p>
+<p class="info">Wintab32.dll をロードしました。ペンタブを利用できます。</p>
+<p class="info">ペンタブの筆圧分解能: 1024 レベル</p>
+<p class="info">ゲームパッドを使用できます。最大接続数: 16</p>
+<p class="info">XInput コントローラーを使用できます。</p>
+<p class="info">マルチタッチには対応していません。</p>
+<p class="info">Kinect v1 は使用できません。</p>
+<p class="info">Kinect v2 は使用できません。</p>
+<p class="info">サウンドデバイス: スピーカー (Realtek High Definition Audio)</p>
+<p class="info">d3d11.dll をロードしました。</p>
+<p class="info">2 個のグラフィックスアダプターを検出しました。</p>
+<p class="info">[0] NVIDIA GeForce GT 525M  (VRAM 994MiB System 0B Shared 2.7GiB)</p>
+<p class="info">[1] Intel(R) HD Graphics Family (VRAM 64MiB System 0B Shared 1.59GiB)</p>
+<p class="info">デフォルトのグラフィックスアダプターのグラフィックスデバイスを作成します。</p>
+<p class="info">Direct3D 11 driver type: Hardware (feature level: 10_1)</p>
+<p class="info">使用するグラフィックスアダプター: Intel(R) HD Graphics Family (VRAM 64MiB System 0B Shared 1.59GiB)</p>
+<p class="info">エンジンの初期化が完了しました。</p>
+<p class="info">メインスレッドを開始しました。</p>
+<hr width="76%">
+<p class="fail">Sound アセット名 &quot;ELSEdoor&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Sound アセット名 &quot;ELBGMtower&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Sound アセット名 &quot;ELBGMpalace&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Sound アセット名 &quot;ELBGMfortress&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Sound アセット名 &quot;ELBGMtemple&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Sound アセット名 &quot;ELBGMfreezedport&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Sound アセット名 &quot;ELBGMlastboss1&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Sound アセット名 &quot;ELBGMtutorial&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Sound アセット名 &quot;ELBGMbossbattle&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;ELlogotower&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;ELlogocave&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;ELlogotemple&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;ELlogopalace&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;ELlogoport&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;ELlogofortress&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;ELlogoclear&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;ELlogobossbattle&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Sound アセット名 &quot;ELSEstage_start&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Sound アセット名 &quot;ELSEbossbattle_start&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELconfig_select&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">登録されていない Sound アセット &quot;ELBGM&quot; を取得しようとしました。</p>
+<p class="fail">BinaryReader &quot;data/Elis/Event/port/stage00.csv&quot; のオープンに失敗しました。</p>
+<p class="fail">TextReader &quot;data/Elis/Event/port/stage00.csv&quot; のオープンに失敗しました。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeW_stay&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeW_jump&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeW_damaged&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeW_dead&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeW_stay&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeW_jump&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeW_damaged&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeW_dead&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELAxe&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELAxe&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">BinaryReader &quot;data/Elis/Event/port/stage00.csv&quot; のオープンに失敗しました。</p>
+<p class="fail">TextReader &quot;data/Elis/Event/port/stage00.csv&quot; のオープンに失敗しました。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeW_stay&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeW_jump&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeW_damaged&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeW_dead&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeW_stay&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeW_jump&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeW_damaged&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeW_dead&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELBluecap_stay&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELBluecap_damaged&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELBluecap_dead&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELBluecap_attack&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELBluecap_attackArm&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Sound アセット名 &quot;sndELBluecap_shoot&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeW_stay&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeW_jump&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeW_damaged&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeW_dead&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeW_stay&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeW_jump&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeW_damaged&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeW_dead&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeW_stay&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeW_jump&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeW_damaged&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeW_dead&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELBluecap_stay&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELBluecap_damaged&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELBluecap_dead&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELBluecap_attack&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELBluecap_attackArm&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Sound アセット名 &quot;sndELBluecap_shoot&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELAxe&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELAxe&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeW_stay&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeW_jump&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeW_damaged&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeW_dead&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELBluecap_stay&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELBluecap_damaged&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELBluecap_dead&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELBluecap_attack&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELBluecap_attackArm&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Sound アセット名 &quot;sndELBluecap_shoot&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELAxe&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELAxe&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELAxe&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELAxe&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELAxe&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">BinaryReader &quot;data/Elis/Event/port/stage01.csv&quot; のオープンに失敗しました。</p>
+<p class="fail">TextReader &quot;data/Elis/Event/port/stage01.csv&quot; のオープンに失敗しました。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeW_stay&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeW_jump&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeW_damaged&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeW_dead&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELBluecap_stay&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELBluecap_damaged&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELBluecap_dead&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELBluecap_attack&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELBluecap_attackArm&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Sound アセット名 &quot;sndELBluecap_shoot&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELAxe&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELAxe&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELAxe&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELAxe&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELRaven_stay&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELRaven_damaged&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELRaven_attack&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELRaven_dead&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Sound アセット名 &quot;sndELravenCry&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeW_stay&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeW_jump&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeW_damaged&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeW_dead&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">BinaryReader &quot;data/Elis/Event/port/stage02.csv&quot; のオープンに失敗しました。</p>
+<p class="fail">TextReader &quot;data/Elis/Event/port/stage02.csv&quot; のオープンに失敗しました。</p>
+<p class="fail">BinaryReader &quot;data/Elis/Event/port/stage03.csv&quot; のオープンに失敗しました。</p>
+<p class="fail">TextReader &quot;data/Elis/Event/port/stage03.csv&quot; のオープンに失敗しました。</p>
+<p class="fail">Texture アセット名 &quot;texELSeaserpent_head_stay&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSeaserpent_body_stay&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSeaserpent_tail_stay&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELTentacle_fin&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;ELtexTentacle_Ice&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;ELtexTentacle_Ice&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;ELtexTentacle_Ice&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;ELtexTentacle_Ice&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;ELtexTentacle_Ice&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;ELtexTentacle_Ice&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;ELtexTentacle_Ice&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">BinaryReader &quot;data/Elis/Event/port/stage03.csv&quot; のオープンに失敗しました。</p>
+<p class="fail">TextReader &quot;data/Elis/Event/port/stage03.csv&quot; のオープンに失敗しました。</p>
+<p class="fail">Texture アセット名 &quot;texELSeaserpent_head_stay&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSeaserpent_body_stay&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSeaserpent_tail_stay&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELTentacle_fin&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSeaserpent_head_stay&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSeaserpent_body_stay&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSeaserpent_tail_stay&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELTentacle_fin&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;ELtexTentacle_Ice&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;ELtexTentacle_Ice&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;ELtexTentacle_Ice&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;ELtexTentacle_Ice&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;ELtexTentacle_Ice&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;ELtexTentacle_Ice&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;ELtexTentacle_Ice&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;ELtexTentacle_Ice&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;ELtexTentacle_Ice&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;ELtexTentacle_Ice&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">BinaryReader &quot;data/Elis/Event/port/stage03.csv&quot; のオープンに失敗しました。</p>
+<p class="fail">TextReader &quot;data/Elis/Event/port/stage03.csv&quot; のオープンに失敗しました。</p>
+<p class="fail">Texture アセット名 &quot;texELSeaserpent_head_stay&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSeaserpent_body_stay&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSeaserpent_tail_stay&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELTentacle_fin&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSeaserpent_head_stay&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSeaserpent_body_stay&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSeaserpent_tail_stay&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELTentacle_fin&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;ELtexTentacle_Ice&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;ELtexTentacle_Ice&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;ELtexTentacle_Ice&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;ELtexTentacle_Ice&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;ELtexTentacle_Ice&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;ELtexTentacle_Ice&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">BinaryReader &quot;data/Elis/Event/port/stage03.csv&quot; のオープンに失敗しました。</p>
+<p class="fail">TextReader &quot;data/Elis/Event/port/stage03.csv&quot; のオープンに失敗しました。</p>
+<p class="fail">Texture アセット名 &quot;texELSeaserpent_head_stay&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSeaserpent_body_stay&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSeaserpent_tail_stay&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELTentacle_fin&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSeaserpent_head_stay&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSeaserpent_body_stay&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSeaserpent_tail_stay&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELTentacle_fin&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;ELtexTentacle_Ice&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;ELtexTentacle_Ice&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;ELtexTentacle_Ice&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;ELtexTentacle_Ice&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;ELtexTentacle_Ice&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;ELtexTentacle_Ice&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;ELtexTentacle_Ice&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;ELtexTentacle_Ice&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;ELtexTentacle_Ice&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;ELtexTentacle_Ice&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">BinaryReader &quot;data/Elis/Event/port/stage03.csv&quot; のオープンに失敗しました。</p>
+<p class="fail">TextReader &quot;data/Elis/Event/port/stage03.csv&quot; のオープンに失敗しました。</p>
+<p class="fail">Texture アセット名 &quot;texELSeaserpent_head_stay&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSeaserpent_body_stay&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSeaserpent_tail_stay&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELTentacle_fin&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSeaserpent_head_stay&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSeaserpent_body_stay&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSeaserpent_tail_stay&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELTentacle_fin&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;ELtexTentacle_Ice&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;ELtexTentacle_Ice&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;ELtexTentacle_Ice&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;ELtexTentacle_Ice&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;ELtexTentacle_Ice&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;ELtexTentacle_Ice&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;ELtexTentacle_Ice&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;ELtexTentacle_Ice&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELTentacle_fin&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;ELtexTentacle_Ice&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;ELtexTentacle_Ice&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;ELtexTentacle_Ice&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;ELtexTentacle_Ice&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELTentacle_fin&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;ELtexTentacle_Ice&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;ELtexTentacle_Ice&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;ELtexTentacle_Ice&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">BinaryReader &quot;data/Elis/Event/cave/stage00.csv&quot; のオープンに失敗しました。</p>
+<p class="fail">TextReader &quot;data/Elis/Event/cave/stage00.csv&quot; のオープンに失敗しました。</p>
+<p class="fail">Texture アセット名 &quot;texElisWind&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texElisWind_burn&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texElisWind_erase&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texElisWind&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texElisWind_burn&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texElisWind_erase&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELFire&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELFire&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELFire&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELFire&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELFire&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELFire&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELFire&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELFire&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELFire&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELFire&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELFire&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELFire&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELFire&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELFire&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">BinaryReader &quot;data/Elis/Event/cave/stage01.csv&quot; のオープンに失敗しました。</p>
+<p class="fail">TextReader &quot;data/Elis/Event/cave/stage01.csv&quot; のオープンに失敗しました。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeW_stay&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeW_jump&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeW_damaged&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeW_dead&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeW_stay&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeW_jump&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeW_damaged&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeW_dead&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeB_stay&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeB_jump&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeB_damaged&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeB_dead&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texElisWind&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texElisWind_burn&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texElisWind_erase&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texElisWind&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texElisWind_burn&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texElisWind_erase&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texElisWind&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texElisWind_burn&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texElisWind_erase&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texElisWind&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texElisWind_burn&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texElisWind_erase&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeR_stay&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeR_jump&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeR_damaged&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeR_dead&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texElisWind&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texElisWind_burn&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texElisWind_erase&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELFire&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELFire&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELFire&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeW_stay&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeW_jump&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeW_damaged&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeW_dead&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELFire&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELFire&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELFire&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELFire&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELFire&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELFire&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELFire&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELFire&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELFire&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELFire&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELFire&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELFire&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELFire&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELFire&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELFire&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELFire&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELFire&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELFire&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELFire&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeG_stay&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeG_jump&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeG_damaged&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeG_dead&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELFire&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELFire&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeB_stay&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeB_jump&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeB_damaged&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeB_dead&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELFire&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELFire&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeR_stay&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeR_jump&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeR_damaged&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeR_dead&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELFire&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELFire&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELFire&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELFire&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeR_stay&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeR_jump&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeR_damaged&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeR_dead&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeB_stay&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeB_jump&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeB_damaged&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeB_dead&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeW_stay&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeW_jump&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeW_damaged&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeW_dead&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeG_stay&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeG_jump&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeG_damaged&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeG_dead&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeB_stay&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeB_jump&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeB_damaged&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeB_dead&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeR_stay&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeR_jump&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeR_damaged&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeR_dead&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELFire&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELFire&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELFire&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELFire&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELFire&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELFire&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELFire&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELFire&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELFire&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELFire&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELFire&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELFire&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELFire&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlime_stay&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlime_jump&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlime_damaged&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlime_dead&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELFire&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELFire&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELFire&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeW_stay&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeW_jump&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeW_damaged&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeW_dead&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlime_stay&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlime_jump&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlime_damaged&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlime_dead&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">BinaryReader &quot;data/Elis/Event/cave/stage02.csv&quot; のオープンに失敗しました。</p>
+<p class="fail">TextReader &quot;data/Elis/Event/cave/stage02.csv&quot; のオープンに失敗しました。</p>
+<p class="fail">Texture アセット名 &quot;texELrockfall&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELrockfall&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELrockfall&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELrockfall&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELrockfall&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELrockfall&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELrockfall&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELrockfall&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELrockfall&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELrockfall&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELrockfall&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELrockfall&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELrockfall&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELrockfall&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELrockfall&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELrockfall&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELrockfall&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELrockfall&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELrockfall&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELrockfall&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELrockfall&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELrockfall&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELrockfall&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELrockfall&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELrockfall&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELrockfall&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELrockfall&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELrockfall&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELrockfall&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELrockfall&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELrockfall&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELrockfall&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELrockfall&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELrockfall&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELrockfall&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELrockfall&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELrockfall&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELrockfall&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELrockfall&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELrockfall&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELrockfall&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELrockfall&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELrockfall&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELrockfall&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELrockfall&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELrockfall&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELrockfall&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELrockfall&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELrockfall&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELrockfall&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELrockfall&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELrockfall&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELrockfall&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELrockfall&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELrockfall&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELrockfall&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELrockfall&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELrockfall&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELrockfall&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">BinaryReader &quot;data/Elis/Event/tower/stage00.csv&quot; のオープンに失敗しました。</p>
+<p class="fail">TextReader &quot;data/Elis/Event/tower/stage00.csv&quot; のオープンに失敗しました。</p>
+<p class="fail">Texture アセット名 &quot;texElisWind&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texElisWind_burn&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texElisWind_erase&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texElisWind&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texElisWind_burn&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texElisWind_erase&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texElisWind&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texElisWind_burn&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texElisWind_erase&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texElisWind&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texElisWind_burn&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texElisWind_erase&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELFire&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELFire&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELFire&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELFire&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELFire&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELFire&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELFire&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELFire&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELFire&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELFire&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELFire&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELFire&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELFire&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELFire&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELFire&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">BinaryReader &quot;data/Elis/Event/tower/stage01.csv&quot; のオープンに失敗しました。</p>
+<p class="fail">TextReader &quot;data/Elis/Event/tower/stage01.csv&quot; のオープンに失敗しました。</p>
+<p class="fail">Texture アセット名 &quot;texELRedcap_stay&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELRedcap_damaged&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELRedcap_dead&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELRedcap_attack&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELRedcap_attackArm&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Sound アセット名 &quot;sndELredcap_shoot&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELArrow&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELFire&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELFire&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELFire&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELFire&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELFire&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELArrow&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELFire&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELFire&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELFire&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELFire&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELFire&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELFire&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELFire&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELFire&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELFire&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELFire&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELFire&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELFire&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELFire&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELFire&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELArrow&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELFire&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELFire&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELFire&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELFire&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELFire&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELFire&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELFire&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELFire&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELFire&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELFire&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELFire&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELArrow&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELArrow&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELArrow&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELRedcap_stay&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELRedcap_damaged&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELRedcap_dead&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELRedcap_attack&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELRedcap_attackArm&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Sound アセット名 &quot;sndELredcap_shoot&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELArrow&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELArrow&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELArrow&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELArrow&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELArrow&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELArrow&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELRedcap_stay&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELRedcap_damaged&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELRedcap_dead&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELRedcap_attack&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELRedcap_attackArm&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Sound アセット名 &quot;sndELredcap_shoot&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELArrow&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELArrow&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">BinaryReader &quot;data/Elis/Event/tower/stage02.csv&quot; のオープンに失敗しました。</p>
+<p class="fail">TextReader &quot;data/Elis/Event/tower/stage02.csv&quot; のオープンに失敗しました。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeD_stay&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeD_jump&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeD_damaged&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeD_dead&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeD_stay&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeD_jump&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeD_damaged&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeD_dead&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeD_stay&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeD_jump&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeD_damaged&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeD_dead&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">BinaryReader &quot;data/Elis/Event/tower/stage02.csv&quot; のオープンに失敗しました。</p>
+<p class="fail">TextReader &quot;data/Elis/Event/tower/stage02.csv&quot; のオープンに失敗しました。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeD_stay&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeD_jump&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeD_damaged&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeD_dead&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeD_stay&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeD_jump&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeD_damaged&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeD_dead&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeD_stay&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeD_jump&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeD_damaged&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeD_dead&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeD_stay&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeD_jump&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeD_damaged&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeD_dead&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeD_stay&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeD_jump&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeD_damaged&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeD_dead&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texElisWind&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texElisWind_burn&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texElisWind_erase&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeD_stay&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeD_jump&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeD_damaged&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeD_dead&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeD_stay&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeD_jump&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeD_damaged&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeD_dead&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texElisWind&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texElisWind_burn&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texElisWind_erase&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texElisWind&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texElisWind_burn&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texElisWind_erase&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texElisWind&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texElisWind_burn&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texElisWind_erase&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELRedcap_stay&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELRedcap_damaged&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELRedcap_dead&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELRedcap_attack&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELRedcap_attackArm&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Sound アセット名 &quot;sndELredcap_shoot&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELArrow&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texElisWind&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texElisWind_burn&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texElisWind_erase&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texElisWind&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texElisWind_burn&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texElisWind_erase&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELRedcap_stay&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELRedcap_damaged&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELRedcap_dead&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELRedcap_attack&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELRedcap_attackArm&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Sound アセット名 &quot;sndELredcap_shoot&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELArrow&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texElisWind&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texElisWind_burn&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texElisWind_erase&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELArrow&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texElisWind&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texElisWind_burn&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texElisWind_erase&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELArrow&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texElisWind&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texElisWind_burn&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texElisWind_erase&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELArrow&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeD_stay&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeD_jump&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeD_damaged&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeD_dead&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texElisWind&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texElisWind_burn&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texElisWind_erase&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texElisWind&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texElisWind_burn&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texElisWind_erase&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texElisWind&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texElisWind_burn&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texElisWind_erase&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeD_stay&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeD_jump&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeD_damaged&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeD_dead&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeD_stay&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeD_jump&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeD_damaged&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeD_dead&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSharkman_stay&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSharkman_damaged&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSharkman_dead&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeD_stay&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeD_jump&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeD_damaged&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeD_dead&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texElisWind&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texElisWind_burn&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texElisWind_erase&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeD_stay&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeD_jump&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeD_damaged&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeD_dead&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texElisWind&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texElisWind_burn&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texElisWind_erase&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texElisWind&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texElisWind_burn&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texElisWind_erase&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texElisWind&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texElisWind_burn&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texElisWind_erase&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeD_stay&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeD_jump&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeD_damaged&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeD_dead&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeD_stay&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeD_jump&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeD_damaged&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeD_dead&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeD_stay&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeD_jump&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeD_damaged&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeD_dead&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeD_stay&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeD_jump&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeD_damaged&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeD_dead&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSharkman_stay&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSharkman_damaged&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSharkman_dead&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeD_stay&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeD_jump&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeD_damaged&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeD_dead&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">BinaryReader &quot;data/Elis/Event/tower/stage02.csv&quot; のオープンに失敗しました。</p>
+<p class="fail">TextReader &quot;data/Elis/Event/tower/stage02.csv&quot; のオープンに失敗しました。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeD_stay&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeD_jump&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeD_damaged&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeD_dead&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeD_stay&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeD_jump&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeD_damaged&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeD_dead&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeD_stay&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeD_jump&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeD_damaged&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeD_dead&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeD_stay&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeD_jump&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeD_damaged&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeD_dead&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeD_stay&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeD_jump&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeD_damaged&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeD_dead&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeD_stay&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeD_jump&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeD_damaged&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeD_dead&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeD_stay&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeD_jump&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeD_damaged&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeD_dead&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texElisWind&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texElisWind_burn&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texElisWind_erase&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texElisWind&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texElisWind_burn&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texElisWind_erase&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELRedcap_stay&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELRedcap_damaged&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELRedcap_dead&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELRedcap_attack&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELRedcap_attackArm&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Sound アセット名 &quot;sndELredcap_shoot&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texElisWind&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texElisWind_burn&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texElisWind_erase&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELArrow&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELRedcap_stay&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELRedcap_damaged&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELRedcap_dead&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELRedcap_attack&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELRedcap_attackArm&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Sound アセット名 &quot;sndELredcap_shoot&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texElisWind&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texElisWind_burn&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texElisWind_erase&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELArrow&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeD_stay&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeD_jump&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeD_damaged&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeD_dead&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texElisWind&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texElisWind_burn&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texElisWind_erase&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texElisWind&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texElisWind_burn&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texElisWind_erase&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeD_stay&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeD_jump&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeD_damaged&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeD_dead&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeD_stay&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeD_jump&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeD_damaged&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeD_dead&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSharkman_stay&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSharkman_damaged&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSharkman_dead&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeD_stay&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeD_jump&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeD_damaged&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeD_dead&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texElisWind&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texElisWind_burn&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texElisWind_erase&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texElisWind&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texElisWind_burn&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texElisWind_erase&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texElisWind&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texElisWind_burn&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texElisWind_erase&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeD_stay&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeD_jump&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeD_damaged&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeD_dead&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeD_stay&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeD_jump&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeD_damaged&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeD_dead&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeD_stay&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeD_jump&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeD_damaged&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeD_dead&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeD_stay&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeD_jump&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeD_damaged&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeD_dead&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeD_stay&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeD_jump&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeD_damaged&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeD_dead&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeD_stay&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeD_jump&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeD_damaged&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeD_dead&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSharkman_stay&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSharkman_damaged&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSharkman_dead&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeD_stay&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeD_jump&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeD_damaged&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSlimeD_dead&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSharkman_stay&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSharkman_damaged&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texELSharkman_dead&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">BinaryReader &quot;data/Elis/Item/tower/stage05.csv&quot; のオープンに失敗しました。</p>
+<p class="fail">TextReader &quot;data/Elis/Item/tower/stage05.csv&quot; のオープンに失敗しました。</p>
+<p class="fail">BinaryReader &quot;data/Elis/Event/tower/stage05.csv&quot; のオープンに失敗しました。</p>
+<p class="fail">TextReader &quot;data/Elis/Event/tower/stage05.csv&quot; のオープンに失敗しました。</p>
+<p class="fail">Texture アセット名 &quot;texElisWind&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texElisWind_burn&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texElisWind_erase&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texElisWind&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texElisWind_burn&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texElisWind_erase&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texElisWind&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texElisWind_burn&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texElisWind_erase&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texElisWind&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texElisWind_burn&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texElisWind_erase&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texElisWind&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texElisWind_burn&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texElisWind_erase&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texElisWind&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texElisWind_burn&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texElisWind_erase&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texElisWind&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texElisWind_burn&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texElisWind_erase&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texElisWind&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texElisWind_burn&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texElisWind_erase&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texElisWind&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texElisWind_burn&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="fail">Texture アセット名 &quot;texElisWind_erase&quot; はすでに登録されています。違う名前を使用してください。</p>
+<p class="info">System::Update() : ExitEvent EscapeKey</p>
+<hr width="76%">
+<p class="info">メインスレッドを終了しました。</p>
+<p class="info">ウィンドウメッセージの終了を待機中です。</p>
+<p class="info">ウィンドウ表示を終了しました。</p>
+<p class="info">ウィンドウクラスの登録を解除しました。</p>
+<p class="info">エンジンを終了しました。</p>
+<p class="info">2015/3/4 13:03:59</p>
+
+<br>
+<p class="credit0">Siv3D Engine January 2015 v3</p>
+<p class="credit1">Copyright (c) 2008-2015 Ryo Suzuki</p>
+<p class="credit1">Copyright (c) 2011-2013 Waseda Computer Entertainment</p>
+<br>
+<p class="credit0">HamFramework</p>
+<p class="credit1">Copyright (c) 2014-2015 Hamukun</p>
+<p class="credit1">Copyright (c) 2014-2015 Ryo Suzuki</p>
+<br>
+<p class="credit0">libpng version 1.6.12 - June 12, 2014</p>
+<p class="credit1">Copyright (c) 1998-2014 Glenn Randers-Pehrson</p>
+<p class="credit1">Copyright (c) 1996-1997 Andreas Dilger</p>
+<p class="credit1">Copyright (c) 1995-1996 Guy Eric Schalnat, Group 42, Inc.</p>
+<br>
+<p class="credit0">zlib version 1.2.8, April 28, 2013</p>
+<p class="credit1">Copyright (c) 1995-2013 Jean-loup Gailly and Mark Adler</p>
+<br>
+<p class="credit0">libjpeg</p>
+<p class="credit1">Copyright (c) 1994-2011, Thomas G. Lane, Guido Vollbeding.</p>
+<p class="credit2">
+this software is based in part on the work of the Independent JPEG Group
+</p>
+<br>
+<p class="credit0">libjpeg-turbo version 1.3.1</p>
+<p class="credit1">Copyright (c)2009-2013 D. R. Commander. All Rights Reserved.</p>
+<p class="credit2">
+Redistribution and use in source and binary forms, with or without<br>
+modification, are permitted provided that the following conditions are met:<br>
+<br>
+- Redistributions of source code must retain the above copyright notice,<br>
+  this list of conditions and the following disclaimer.<br>
+- Redistributions in binary form must reproduce the above copyright notice,<br>
+  this list of conditions and the following disclaimer in the documentation<br>
+  and/or other materials provided with the distribution.<br>
+- Neither the name of the libjpeg-turbo Project nor the names of its<br>
+  contributors may be used to endorse or promote products derived from this<br>
+  software without specific prior written permission.<br>
+<br>
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS",<br>
+AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE<br>
+IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE<br>
+ARE DISCLAIMED.  IN NO EVENT SHALL THE COPYRIGHT HOLDERS OR CONTRIBUTORS BE<br>
+LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR<br>
+CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF<br>
+SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS<br>
+INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN<br>
+CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)<br>
+ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE<br>
+POSSIBILITY OF SUCH DAMAGE.<br>
+</p>
+<br>
+<p class="credit0">OpenJPEG version 1.5.0</p>
+<p class="credit1">Copyright (c) 2002-2012, Communications and Remote Sensing Laboratory,<br>Universite catholique de Louvain (UCL), Belgium</p>
+<p class="credit1">Copyright (c) 2002-2012, Professor Benoit Macq</p>
+<p class="credit1">Copyright (c) 2003-2012, Antonin Descampe</p>
+<p class="credit1">Copyright (c) 2003-2009, Francois-Olivier Devaux</p>
+<p class="credit1">Copyright (c) 2005, Herve Drolon, FreeImage Team</p>
+<p class="credit1">Copyright (c) 2002-2003, Yannick Verschueren</p>
+<p class="credit1">Copyright (c) 2001-2003, David Janssens</p>
+<p class="credit1">All rights reserved.</p>
+<p class="credit2">
+Redistribution and use in source and binary forms, with or without<br>
+modification, are permitted provided that the following conditions are met:<br>
+1. Redistributions of source code must retain the above copyright<br>
+   notice, this list of conditions and the following disclaimer.<br>
+2. Redistributions in binary form must reproduce the above copyright<br>
+   notice, this list of conditions and the following disclaimer in the<br>
+   documentation and/or other materials provided with the distribution.<br>
+<br>
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS `AS IS'<br>
+AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE<br>
+IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE<br>
+ARE DISCLAIMED.  IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE<br>
+LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR<br>
+CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF<br>
+SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS<br>
+INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN<br>
+CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)<br>
+ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE<br>
+POSSIBILITY OF SUCH DAMAGE.<br>
+</p>
+<br>
+<p class="credit0">libwebp version 0.4.0</p>
+<p class="credit1">Copyright (c) 2010, Google Inc. All rights reserved.</p>
+<p class="credit2">
+Redistribution and use in source and binary forms, with or without<br>
+modification, are permitted provided that the following conditions are met:<br>
+<br>
+  * Redistributions of source code must retain the above copyright<br>
+    notice, this list of conditions and the following disclaimer.<br>
+<br>
+  * Redistributions in binary form must reproduce the above copyright<br>
+    notice, this list of conditions and the following disclaimer in<br>
+    the documentation and/or other materials provided with the distribution.<br>
+<br>
+  * Neither the name of Google nor the names of its contributors may<br>
+    be used to endorse or promote products derived from this software<br>
+    without specific prior written permission.<br>
+<br>
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS<br>
+"AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT<br>
+LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR<br>
+A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT<br>
+HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,<br>
+SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT<br>
+LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,<br>
+DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY<br>
+THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT<br>
+(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE<br>
+OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.<br>
+</p>
+<br>
+<p class="credit0">libmpg123 version 1.20.1</p>
+<p class="credit1">Copyright (c) 1995-2013 by Michael Hipp and others</p>
+<p class="credit2">free software under the terms of the LGPL v2.1</p>
+<br>
+<p class="credit0">libogg version 1.3.0</p>
+<p class="credit1">Copyright (c) 2002, Xiph.org Foundation</p>
+<p class="credit2">
+Redistribution and use in source and binary forms, with or without<br>
+modification, are permitted provided that the following conditions are met:<br>
+<br>
+- Redistributions of source code must retain the above copyright<br>
+notice, this list of conditions and the following disclaimer.<br>
+<br>
+- Redistributions in binary form must reproduce the above copyright<br>
+notice, this list of conditions and the following disclaimer in the<br>
+documentation and/or other materials provided with the distribution.<br>
+<br>
+- Neither the name of the Xiph.org Foundation nor the names of its<br>
+contributors may be used to endorse or promote products derived from<br>
+this software without specific prior written permission.<br>
+<br>
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS<br>
+``AS IS'' AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT<br>
+LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR<br>
+A PARTICULAR PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL THE FOUNDATION<br>
+OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,<br>
+SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT<br>
+LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,<br>
+DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY<br>
+THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT<br>
+(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE<br>
+OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.<br>
+</p>
+<br>
+<p class="credit0">libvorbis version 1.3.3</p>
+<p class="credit1">Copyright (c) 2002-2008 Xiph.org Foundation</p>
+<p class="credit2">
+Redistribution and use in source and binary forms, with or without<br>
+modification, are permitted provided that the following conditions are met:<br>
+<br>
+- Redistributions of source code must retain the above copyright<br>
+notice, this list of conditions and the following disclaimer.<br>
+<br>
+- Redistributions in binary form must reproduce the above copyright<br>
+notice, this list of conditions and the following disclaimer in the<br>
+documentation and/or other materials provided with the distribution.<br>
+<br>
+- Neither the name of the Xiph.org Foundation nor the names of its<br>
+contributors may be used to endorse or promote products derived from<br>
+this software without specific prior written permission.<br>
+<br>
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS<br>
+``AS IS'' AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT<br>
+LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR<br>
+A PARTICULAR PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL THE FOUNDATION<br>
+OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,<br>
+SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT<br>
+LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,<br>
+DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY<br>
+THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT<br>
+(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE<br>
+OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.<br>
+</p>
+<br>
+<p class="credit0">OpenCV version 2.4.9</p>
+<p class="credit1">Copyright (c) 2000-2008, Intel Corporation, all rights reserved.</p>
+<p class="credit1">Copyright (c) 2009-2011, Willow Garage Inc., all rights reserved.</p>
+<p class="credit2">
+Redistribution and use in source and binary forms, with or without<br>
+modification, are permitted provided that the following conditions are met:<br>
+<br>
+- Redistributions of source code must retain the above copyright<br>
+notice, this list of conditions and the following disclaimer.<br>
+<br>
+- Redistributions in binary form must reproduce the above copyright<br>
+notice, this list of conditions and the following disclaimer in the<br>
+documentation and/or other materials provided with the distribution.<br>
+<br>
+- Neither the name of the Xiph.org Foundation nor the names of its<br>
+contributors may be used to endorse or promote products derived from<br>
+this software without specific prior written permission.<br>
+<br>
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS<br>
+``AS IS'' AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT<br>
+LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR<br>
+A PARTICULAR PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL THE FOUNDATION<br>
+OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,<br>
+SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT<br>
+LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,<br>
+DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY<br>
+THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT<br>
+(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE<br>
+OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.<br>
+</p>
+<br>
+<p class="credit0">Poly2Tri</p>
+<p class="credit1">Copyright (c) 2009-2010, Poly2Tri Contributors</p>
+<p class="credit2">
+Redistribution and use in source and binary forms, with or without modification,<br>
+are permitted provided that the following conditions are met:<br>
+<br>
+* Redistributions of source code must retain the above copyright notice,<br>
+  this list of conditions and the following disclaimer.<br>
+* Redistributions in binary form must reproduce the above copyright notice,<br>
+  this list of conditions and the following disclaimer in the documentation<br>
+  and/or other materials provided with the distribution.<br>
+* Neither the name of Poly2Tri nor the names of its contributors may be<br>
+  used to endorse or promote products derived from this software without specific<br>
+  prior written permission.<br>
+<br>
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS<br>
+"AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT<br>
+LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR<br>
+A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR<br>
+CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,<br>
+EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,<br>
+PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR<br>
+PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF<br>
+LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING<br>
+NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS<br>
+SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.<br>
+</p>
+<br>
+<p class="credit0">liboauth</p>
+<p class="credit1">Copyright (c) 2007-2012, Robin Gareus</p>
+<p class="credit2">
+The base64 functions are by Jan-Henrik Haukeland, &lt;hauk@tildeslash.com&gt;<br>
+and un/escape_url() was inspired by libcurl's curl_escape under ISC-license<br>
+many thanks to Daniel Stenberg &lt;daniel@haxx.se&gt;.<br>
+<br>
+Permission is hereby granted, free of charge, to any person obtaining a copy<br>
+of this software and associated documentation files (the "Software"), to deal<br>
+in the Software without restriction, including without limitation the rights<br>
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell<br>
+copies of the Software, and to permit persons to whom the Software is<br>
+furnished to do so, subject to the following conditions:<br>
+<br>
+The above copyright notice and this permission notice shall be included in<br>
+all copies or substantial portions of the Software.<br>
+<br>
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR<br>
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,<br>
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE<br>
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER<br>
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,<br>
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN<br>
+THE SOFTWARE.<br>
+</p>
+<br>
+<p class="credit0">OpenSSL</p>
+<p class="credit1">Copyright (c) 1998-2004 The OpenSSL Project. All rights reserved.</p>
+<p class="credit2">
+Redistribution and use in source and binary forms, with or without<br>
+modification, are permitted provided that the following conditions<br>
+are met:<br>
+<br>
+1. Redistributions of source code must retain the above copyright<br>
+   notice, this list of conditions and the following disclaimer. <br>
+<br>
+2. Redistributions in binary form must reproduce the above copyright<br>
+   notice, this list of conditions and the following disclaimer in<br>
+   the documentation and/or other materials provided with the<br>
+   distribution.<br>
+<br>
+3. All advertising materials mentioning features or use of this<br>
+   software must display the following acknowledgment:<br>
+   "This product includes software developed by the OpenSSL Project<br>
+   for use in the OpenSSL Toolkit. (http://www.openssl.org/)"<br>
+<br>
+4. The names "OpenSSL Toolkit" and "OpenSSL Project" must not be used to<br>
+   endorse or promote products derived from this software without<br>
+   prior written permission. For written permission, please contact<br>
+   openssl-core@openssl.org.<br>
+<br>
+5. Products derived from this software may not be called "OpenSSL"<br>
+   nor may "OpenSSL" appear in their names without prior written<br>
+   permission of the OpenSSL Project.<br>
+<br>
+6. Redistributions of any form whatsoever must retain the following<br>
+   acknowledgment:<br>
+   "This product includes software developed by the OpenSSL Project<br>
+   for use in the OpenSSL Toolkit (http://www.openssl.org/)"<br>
+<br>
+THIS SOFTWARE IS PROVIDED BY THE OpenSSL PROJECT ``AS IS'' AND ANY<br>
+EXPRESSED OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE<br>
+IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR<br>
+PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL THE OpenSSL PROJECT OR<br>
+ITS CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,<br>
+SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT<br>
+NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;<br>
+LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)<br>
+HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT,<br>
+STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)<br>
+ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED<br>
+OF THE POSSIBILITY OF SUCH DAMAGE.<br>
+====================================================================<br>
+<br>
+This product includes cryptographic software written by Eric Young<br>
+(eay@cryptsoft.com).  This product includes software written by Tim<br>
+Hudson (tjh@cryptsoft.com).<br>
+</p>
+<br>
+<p class="credit0">ArUco</p>
+<p class="credit1">Copyright (c) 2011 Rafael Muñoz Salinas</p>
+<p class="credit2">
+Redistribution and use in source and binary forms, with or without modification, are<br>
+permitted provided that the following conditions are met:<br>
+<br>
+   1. Redistributions of source code must retain the above copyright notice, this list of<br>
+      conditions and the following disclaimer.<br>
+<br>
+   2. Redistributions in binary form must reproduce the above copyright notice, this list<br>
+      of conditions and the following disclaimer in the documentation and/or other materials<br>
+      provided with the distribution.<br>
+<br>
+THIS SOFTWARE IS PROVIDED BY Rafael Muñoz Salinas ''AS IS'' AND ANY EXPRESS OR IMPLIED<br>
+WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND<br>
+FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL Rafael Muñoz Salinas OR<br>
+CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR<br>
+CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR<br>
+SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON<br>
+ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING<br>
+NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF<br>
+ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.<br>
+</p>
+<br>
+<p class="credit0">PolyPartition Library version r7</p>
+<p class="credit1">Copyright (c) 2011 by Ivan Fratric</p>
+<br>
+<p class="credit0">Box2D 2.3.2</p>
+<p class="credit1">Copyright (c) 2006-2013 Erin Catto</p>
+<br>
+<p class="credit0">DirectX Mesh Geometry Library</p>
+<p class="credit1">Copyright (c) Microsoft Corporation. All rights reserved.</p>
+<br>
+<p class="credit0">tinyobjloader</p>
+<p class="credit1">Copyright (c) 2012-2013, Syoyo Fujita</p>
+<p class="credit2">Licensed under 2-clause BSD liecense.</p>
+<br>
+<p class="credit0">7-ZIP32.DLL version 9.22.00.01</p>
+<p class="credit1">Copyright (c) 2006-2014, Akita Minoru</p>
+<p class="credit2">free software under the terms of the LGPL v2.1</p>
+<br>
+<p class="credit0">SoundTouch Library version 1.8.0</p>
+<p class="credit1">Copyright (c) 2001-2014, Olli Parviainen</p>
+<p class="credit2">free software under the terms of the LGPL v2.1</p>
+</body>
+</html>

@@ -1,0 +1,4 @@
+tower,,,,,,
+setStartpos,stage06,128,641,,,
+door,5590,766,stage01,200,2298,Tdoor.png
+showlogo,logotower,,,,,
