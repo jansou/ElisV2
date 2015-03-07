@@ -68,11 +68,8 @@ enum class ELEnemySize
 struct ELEnemyData
 {
 	ELEnemyData(ELEnemyName _Name,ELEnemySize _Size,Rect _hitRect,int _HP)
+		:Name(_Name), Size(_Size), hitRect(_hitRect), HP(_HP)
 	{
-		Name = _Name;
-		hitRect = _hitRect;
-		Size = _Size;
-		HP = _HP;
 	}
 
 	ELEnemyName Name;
@@ -89,12 +86,9 @@ enum ELEnemyFace
 
 struct ELEnemyPlace
 {
-	ELEnemyPlace(
-		ELEnemyName _Name,
-		Point _Pos)
+	ELEnemyPlace(ELEnemyName _Name, Point _Pos)
+		:Name(_Name), Pos(_Pos)
 	{
-		Name = _Name;
-		Pos = _Pos;
 		created = false;
 	}
 

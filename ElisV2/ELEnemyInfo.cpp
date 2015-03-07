@@ -95,20 +95,24 @@ ELEnemyName ELEnemyInfo::loadName(const String& Name) const
 		return ELEnemyName::seaserpent;
 	}
 	////////////////
-	else 
+	else {
 		return ELEnemyName::null;
+	}
 }
 
 ELEnemySize ELEnemyInfo::loadSize(const String& enemysize)const
 {
 	//LOGFMT_ERR(enemysize);
 
-	if(enemysize==L"s")
+	if (enemysize == L"s"){
 		return ELEnemySize::S;
-	else if(enemysize==L"m")
+	}
+	else if (enemysize == L"m"){
 		return ELEnemySize::M;
-	else if(enemysize==L"l")
+	}
+	else if (enemysize == L"l"){
 		return ELEnemySize::L;
+	}
 
 	//LOGFMT_ERR("サイズ！");
 	return ELEnemySize::null;
@@ -116,7 +120,6 @@ ELEnemySize ELEnemyInfo::loadSize(const String& enemysize)const
 
 bool ELEnemyInfo::loadEnemyData()
 {
-	
 	const CSVReader csv(L"data/Elis/Enemy/EnemyData.csv");
 
 	if(!csv)
@@ -124,11 +127,9 @@ bool ELEnemyInfo::loadEnemyData()
 		return false;
 	}
 
-	String Name;
-
 	for(int i=0;;++i)
 	{
-		Name = csv.get<String>(i,0).lower();
+		String Name = csv.get<String>(i, 0).lower();
 
 		if(Name.isEmpty)//名前が空なら名簿読み込み終了
 		{
@@ -167,11 +168,9 @@ bool ELEnemyInfo::setEnemysPlace(const String& mapName, const String& stageName)
 		return false;
 	}
 
-	String SName;
-
 	for(int i=0;;++i)
 	{
-		SName = csv.get<String>(i,0).lower();
+		String SName = csv.get<String>(i, 0).lower();
 
 		if(SName.isEmpty)
 		{
@@ -428,19 +427,21 @@ void ELEnemyInfo::draw(const Point& camerapos)const
 
 Point ELEnemyInfo::modifyDrawPos(const ELEnemySize& enemySize)const
 {
-	
 	switch (enemySize)
 	{
-	case ELEnemySize::S:	return Point(kSsize.x/2,kSsize.y);
+	case ELEnemySize::S:
+		return Point(kSsize.x/2,kSsize.y);
 		break;
-	case ELEnemySize::M:	return Point(kMsize.x/2,kMsize.y);
+	case ELEnemySize::M:
+		return Point(kMsize.x/2,kMsize.y);
 		break;
-	case ELEnemySize::L: return Point(kLsize.x/2,kLsize.y);
+	case ELEnemySize::L:
+		return Point(kLsize.x/2,kLsize.y);
 		break;
-	default: return Point(0,0);
+	default:
+		return Point(0,0);
 		break;
-	}
-	
+	}	
 }
 
 int ELEnemyInfo::getDamage(const Rect& body) const
@@ -460,8 +461,9 @@ void ELEnemyInfo::checkHit(const ELAttack& attack)
 {
 	for(const auto& enemy : m_enemies)
 	{
-		if(!enemy->isDamaged())
-		enemy -> giveDamage(attack.getDamage(enemy ->getHitRect(),ELShooter::Enemy));//damageくらう
+		if (!enemy->isDamaged()){
+			enemy->giveDamage(attack.getDamage(enemy->getHitRect(), ELShooter::Enemy));//damageくらう
+		}
 	}
 }
 
