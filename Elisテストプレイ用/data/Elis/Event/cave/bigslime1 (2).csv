@@ -1,5 +1,0 @@
-system,stopbgm,
-player,walktowithcamera,300,2
-enemy,ready,,
-system,showlogo,logobossbattle,
-system,playbgm,bossbattle,
