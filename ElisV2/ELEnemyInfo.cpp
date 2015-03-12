@@ -444,7 +444,7 @@ Point ELEnemyInfo::modifyDrawPos(const ELEnemySize& enemySize)const
 	}	
 }
 
-int ELEnemyInfo::getDamage(const Rect& body) const
+int ELEnemyInfo::getDamage(const Rect& body) const//ƒvƒŒƒCƒ„[‚ª“G‚É‚Ô‚Â‚©‚é
 {
 	for(const auto& enemy : m_enemies)
 	{
@@ -457,7 +457,7 @@ int ELEnemyInfo::getDamage(const Rect& body) const
 	return 0;
 }
 
-void ELEnemyInfo::checkHit(const ELAttack& attack)
+void ELEnemyInfo::checkHit(const ELAttack& attack)//“G‚ªUŒ‚‚É“–‚½‚é
 {
 	for(const auto& enemy : m_enemies)
 	{

@@ -127,6 +127,10 @@ private:
 	int m_speed;
 	ELEnemyState m_oldState;
 
+
+	bool m_head_updown;
+	Point m_targetPlayerPos;
+
 	ELEnemyName m_name;
 	ELEnemySize m_size;
 	int m_HP;
