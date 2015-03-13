@@ -26,7 +26,8 @@ m_erased(false),
 m_invisibled(false),
 m_cameraEffect(ELCameraEffect::null),
 m_damageCount(0),
-m_attackType(ELSeaserpentAttack::UpperTentacle),
+m_attackType(ELSeaserpentAttack::Staying),
+m_oldAttackType(ELSeaserpentAttack::null),
 m_hitRect(990,170,80,70),
 m_maxHP(HP),
 m_head_updown(true)
@@ -44,6 +45,9 @@ m_head_updown(true)
 
 	TextureAsset::Register(L"texELSeaserpent_seaser_head", L"data/Elis/Enemy/Seaserpent/seaser_head.png");
 	TextureAsset::Register(L"texELSeaserpent_seaser_body", L"data/Elis/Enemy/Seaserpent/seaser_body.png");
+	TextureAsset::Register(L"texELSeaserpent_seaser_attack_head", L"data/Elis/Enemy/Seaserpent/seaser_head_attack.png");
+	TextureAsset::Register(L"texELSeaserpent_seaser_body_front", L"data/Elis/Enemy/Seaserpent/seaser_body_front.png");
+	
 
 }
 
@@ -84,22 +88,46 @@ namespace
 
 void ELSeaserpent::update(const ELMap& map, const Point& playerpos, ELObjectInfo& object, ELItem &item, ELAttack &attack, const Point &camerapos)
 {
-	//tentacle, 950, 720,
-	//tentacle, 1230, 720,
-
-	//tentacle1
-	//tentacle1update(map, playerpos, object, item, attack, camerapos);
-
+	
 	if (m_state == ELEnemyState::Staying)
 	{
-		if (m_frameCount > 120)
+		//////ŽŸ‚ÌUŒ‚‚ðŒˆ‚ß‚é
+		if (m_frameCount > 120 && m_attackType == ELSeaserpentAttack::Staying)
 		{
-			m_state = ELEnemyState::Moving;
+			if (m_oldAttackType == ELSeaserpentAttack::null
+				|| m_oldAttackType == ELSeaserpentAttack::UpperTentacle)
+			{
+				m_attackType = ELSeaserpentAttack::Bite;
+				m_oldAttackType = ELSeaserpentAttack::Bite;
+				m_state = ELEnemyState::Moving;
+				m_targetPlayerPos = playerpos;
+
+				//LOG_ERROR(L"!!!");
+			}
+			else if (m_oldAttackType == ELSeaserpentAttack::Bite)
+			{
+				m_attackType = ELSeaserpentAttack::UpperTentacle;
+				m_oldAttackType = ELSeaserpentAttack::UpperTentacle;
+
+				//LOG_ERROR(L"???");
+			}
+			else
+			{
+				m_attackType = ELSeaserpentAttack::Bite;
+				m_oldAttackType = ELSeaserpentAttack::Bite;
+				m_state = ELEnemyState::Moving;
+				m_targetPlayerPos = playerpos;
+			}
+
 			m_frameCount = 0;
-			m_targetPlayerPos = playerpos;
+		}
+	}
 
-
-			if (m_targetPlayerPos.x > m_pos.x)
+	if (m_attackType == ELSeaserpentAttack::Bite)
+	{
+		if (m_state == ELEnemyState::Moving)
+		{
+			if (playerpos.x > m_pos.x)
 			{
 				m_face = ELEnemyFace::EnemyRight;
 			}
@@ -107,98 +135,91 @@ void ELSeaserpent::update(const ELMap& map, const Point& playerpos, ELObjectInfo
 			{
 				m_face = ELEnemyFace::EnemyLeft;
 			}
-		}
-	}
-	else if (m_state == ELEnemyState::Moving)
-	{
-		if (playerpos.x > m_pos.x)
-		{
-			m_face = ELEnemyFace::EnemyRight;
-		}
-		else
-		{
-			m_face = ELEnemyFace::EnemyLeft;
-		}
 
-		if (m_face == ELEnemyFace::EnemyLeft)
-		{
-			//m_pos.x = Max(m_pos.x - kSpeed, m_targetPlayerPos.x);
-			m_pos.x = Max(m_pos.x - kSpeed, playerpos.x);
-		}
-		else if (m_face == ELEnemyFace::EnemyRight)
-		{
-			//m_pos.x = Min(m_pos.x + kSpeed, m_targetPlayerPos.x);
-			m_pos.x = Min(m_pos.x + kSpeed, playerpos.x);
-		}
-
-
-		if (m_head_updown)//“ª‚ ‚°‚é
-		{
-			m_pos.y = Max(m_startPos.y, m_pos.y - kHeadSpeed);
-
-			if (m_startPos.y >= m_pos.y)
+			if (m_face == ELEnemyFace::EnemyLeft)
 			{
-				m_head_updown = false;
+				//m_pos.x = Max(m_pos.x - kSpeed, m_targetPlayerPos.x);
+				m_pos.x = Max(m_pos.x - kSpeed, playerpos.x);
 			}
-		}
-		else//“ª‰º‚°‚é
-		{
-			m_pos.y = Min(m_startPos.y + kHeadShakeRange, m_pos.y + kHeadSpeed);
-
-			if (m_startPos.y + kHeadShakeRange <= m_pos.y)
+			else if (m_face == ELEnemyFace::EnemyRight)
 			{
-				m_head_updown = true;
+				//m_pos.x = Min(m_pos.x + kSpeed, m_targetPlayerPos.x);
+				m_pos.x = Min(m_pos.x + kSpeed, playerpos.x);
 			}
-		}
 
-		//if (m_pos.x == m_targetPlayerPos.x)
-		if (m_pos.x == playerpos.x 
-			|| m_frameCount>200)
-		{
-			m_state = ELEnemyState::Attacking;
-			m_frameCount = 0;
 
-			m_head_updown = false;
-		}
-	}
-	else if (m_state == ELEnemyState::Attacking)
-	{
-		if (!m_head_updown)
-		{
-			m_pos.y = Min(m_pos.y + kBiteSpeed, m_startPos.y + 450);
-
-			if (m_startPos.y + 450 == m_pos.y)
+			if (m_head_updown)//“ª‚ ‚°‚é
 			{
-				m_head_updown = true;
+				m_pos.y = Max(m_startPos.y, m_pos.y - kHeadSpeed);
+
+				if (m_startPos.y >= m_pos.y)
+				{
+					m_head_updown = false;
+				}
 			}
-		}
-		else
-		{
-			m_pos.y = Max(m_pos.y - kBiteSpeed, m_startPos.y);
-
-			if (m_startPos.y == m_pos.y)
+			else//“ª‰º‚°‚é
 			{
-				m_head_updown = false;
-				m_state = ELEnemyState::Staying;
+				m_pos.y = Min(m_startPos.y + kHeadShakeRange, m_pos.y + kHeadSpeed);
+
+				if (m_startPos.y + kHeadShakeRange <= m_pos.y)
+				{
+					m_head_updown = true;
+				}
+			}
+
+			//if (m_pos.x == m_targetPlayerPos.x)
+			if (/*m_pos.x == playerpos.x
+				||*/ m_frameCount > 200)
+			{
+				m_state = ELEnemyState::Attacking;
 				m_frameCount = 0;
+
+				m_head_updown = false;
 			}
 		}
+		else if (m_state == ELEnemyState::Attacking)
+		{
+			if (!m_head_updown)
+			{
+				m_pos.y = Min(m_pos.y + kBiteSpeed, m_startPos.y + 450);
 
+				if (m_startPos.y + 450 == m_pos.y)
+				{
+					m_head_updown = true;
+				}
+			}
+			else
+			{
+				m_pos.y = Max(m_pos.y - kBiteSpeed, m_startPos.y);
+
+				if (m_startPos.y == m_pos.y)
+				{
+					m_head_updown = false;
+					m_state = ELEnemyState::Staying;
+					m_frameCount = 0;
+					m_attackType = ELSeaserpentAttack::Staying;
+				}
+			}
+			////////////////////////////////
+		}
 	}
 	
-	if (m_tentacles.size()<3 && m_HP < m_maxHP*2/3)
+	if (m_attackType == ELSeaserpentAttack::Staying)
 	{
-		//‚R–{–Ú¶‚â‚·
-		ELSeaserpentTentacle item;
-		m_tentacles.push_back(item);
-		m_tentacles[2].setPos(Point(1050,780));
-	}
-	else if (m_tentacles.size()<4 && m_HP < m_maxHP/3)
-	{
-		//‚S–{–Ú¶‚â‚·
-		ELSeaserpentTentacle item;
-		m_tentacles.push_back(item);
-		m_tentacles[3].setPos(Point(830, 760));
+		if (m_tentacles.size() < 3 && m_HP < m_maxHP * 2 / 3)
+		{
+			//‚R–{–Ú¶‚â‚·
+			ELSeaserpentTentacle item;
+			m_tentacles.push_back(item);
+			m_tentacles[2].setPos(Point(1050, 780));
+		}
+		else if (m_tentacles.size() < 4 && m_HP < m_maxHP / 3)
+		{
+			//‚S–{–Ú¶‚â‚·
+			ELSeaserpentTentacle item;
+			m_tentacles.push_back(item);
+			m_tentacles[3].setPos(Point(230, 780));
+		}
 	}
 
 	if (m_invisibled)
@@ -210,27 +231,45 @@ void ELSeaserpent::update(const ELMap& map, const Point& playerpos, ELObjectInfo
 			m_damageCount = 0;
 		}
 	}
-	//GŽè‚Ö‚ÌŽw—ß///////////////////////////////////////////////
-	if (m_frameCount%300==0)
+
+	//GŽè‚Ö‚ÌUŒ‚Žw—ß///////////////////////////////////////////////
+	if (m_attackType == ELSeaserpentAttack::UpperTentacle)
 	{
+		if (m_frameCount == 30*0)
+		{
+			m_tentacles[0].setState(ELEnemyState::Moving);
+		}
+		if (m_frameCount == 30*1)
+		{
+			m_tentacles[1].setState(ELEnemyState::Moving);
+		}
+		if (m_tentacles.size()>2 &&  m_frameCount == 30 * 2)
+		{
+			m_tentacles[2].setState(ELEnemyState::Moving);
+		}
+		if (m_tentacles.size()>3 && m_frameCount == 30 * 3)
+		{
+			m_tentacles[3].setState(ELEnemyState::Moving);
+		}
+
+		bool flag = true;
 		for (size_t i = 0; i < m_tentacles.size(); ++i)
 		{
-			m_tentacles[i].setState(ELEnemyState::Moving);
+			flag *= (m_tentacles[i].getEnemyState() != ELEnemyState::Moving);
 		}
+		//LOG_ERROR(flag);
 
-		/*
-		int ran = Random(m_tentacles.size() - 1);
-		m_tentacles[ran].setState(ELEnemyState::Moving);
-
-		if (m_tentacles.size() == 4)
+		if (flag)
 		{
-			ran = Random(m_tentacles.size() - 1);
-			m_tentacles[ran].setState(ELEnemyState::Moving);
+			
+			m_attackType = ELSeaserpentAttack::Staying;
+			m_state = ELEnemyState::Staying;
+			m_frameCount = 0;
 		}
-		*/
 	}
 	/////////////////////////////////////
-	for (ELSeaserpentTentacle &t : m_tentacles){
+	for (ELSeaserpentTentacle &t : m_tentacles)
+	{
 		t.update(map, playerpos, object, item, attack, camerapos);
 	}
 
@@ -283,8 +322,17 @@ void ELSeaserpent::draw(const Point& camerapos, const Point& modifyDrawPos)const
 {
 	const int a = 255 -100*m_invisibled;
 
-	TextureAsset(L"texELSeaserpent_seaser_body").draw(m_pos.x - 170 / 2,m_startPos.y+100);
-	TextureAsset(L"texELSeaserpent_seaser_head").draw(m_pos - Point(180, 260) / 2);
+	if (m_state == ELEnemyState::Attacking)
+	{
+		TextureAsset(L"texELSeaserpent_seaser_body").draw(m_pos.x - 170 / 2, m_startPos.y + 100);
+		TextureAsset(L"texELSeaserpent_seaser_body_front").resize(170, m_pos.y - m_startPos.y).draw(m_pos.x - 170 / 2, m_startPos.y);
+		TextureAsset(L"texELSeaserpent_seaser_attack_head").draw(m_pos - Point(180, 260) / 2);
+	}
+	else
+	{
+		TextureAsset(L"texELSeaserpent_seaser_body").draw(m_pos.x - 170 / 2, m_startPos.y + 100);
+		TextureAsset(L"texELSeaserpent_seaser_head").draw(m_pos - Point(180, 260) / 2);
+	}
 	/*
 	drawTail_stay();
 

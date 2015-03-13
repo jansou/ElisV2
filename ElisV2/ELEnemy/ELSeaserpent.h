@@ -116,6 +116,9 @@ enum class ELSeaserpentAttack
 {
 	UpperTentacle,
 	IceShoot,
+	Bite,
+	Staying,
+	null,
 };
 
 class ELSeaserpent : public ELEnemy
@@ -147,6 +150,8 @@ private:
 	int m_damageCount;
 
 	ELSeaserpentAttack m_attackType;
+	ELSeaserpentAttack m_oldAttackType;
+
 	//‰º‚©‚ç‚Ì“Ë‚«ã‚°UŒ‚
 	void Attack_UpperTentacle(ELAttack& attack, const Point& playerpos);
 
