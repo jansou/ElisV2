@@ -185,27 +185,6 @@ void ELSeaserpent::update(const ELMap& map, const Point& playerpos, ELObjectInfo
 		}
 
 	}
-
-	/*
-	if (m_face == ELEnemyFace::EnemyLeft)
-	{
-		m_pos.x = Max(m_pos.x - kSpeed, 180);
-
-		if (m_pos.x <= 180)
-		{
-			m_face = ELEnemyFace::EnemyRight;
-		}
-	}
-	else if (m_face == ELEnemyFace::EnemyRight)
-	{
-		m_pos.x = Min(m_pos.x + kSpeed, 1280-180);
-
-		if (m_pos.x >= 1280 - 180)
-		{
-			m_face = ELEnemyFace::EnemyLeft;
-		}
-	}
-	*/
 	
 	if (m_tentacles.size()<3 && m_HP < m_maxHP*2/3)
 	{
@@ -231,9 +210,15 @@ void ELSeaserpent::update(const ELMap& map, const Point& playerpos, ELObjectInfo
 			m_damageCount = 0;
 		}
 	}
-
+	//GŽè‚Ö‚ÌŽw—ß///////////////////////////////////////////////
 	if (m_frameCount%300==0)
 	{
+		for (size_t i = 0; i < m_tentacles.size(); ++i)
+		{
+			m_tentacles[i].setState(ELEnemyState::Moving);
+		}
+
+		/*
 		int ran = Random(m_tentacles.size() - 1);
 		m_tentacles[ran].setState(ELEnemyState::Moving);
 
@@ -242,8 +227,9 @@ void ELSeaserpent::update(const ELMap& map, const Point& playerpos, ELObjectInfo
 			ran = Random(m_tentacles.size() - 1);
 			m_tentacles[ran].setState(ELEnemyState::Moving);
 		}
+		*/
 	}
-
+	/////////////////////////////////////
 	for (ELSeaserpentTentacle &t : m_tentacles){
 		t.update(map, playerpos, object, item, attack, camerapos);
 	}

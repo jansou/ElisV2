@@ -53,4 +53,13 @@ public:
 	virtual ELCameraEffect getCameraEffect() const {return ELCameraEffect::null;}
 
 	virtual Point getBurstPos() const {return Point(0,0);}
+
+
+
+	////////////////////////////////////////////////////////
+	//seaserpent—p
+	virtual int getOptionEnemysSize() const { return 0; }
+	virtual Rect getOptionEnemyHitRect(int index){ return Rect(0, 0, 0, 0); }
+	virtual void giveOptionEnemyDamage(int damage, int index) {}
+	////////////////////////////////////////////////////////
 };

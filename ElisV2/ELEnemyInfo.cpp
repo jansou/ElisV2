@@ -179,11 +179,15 @@ bool ELEnemyInfo::setEnemysPlace(const String& mapName, const String& stageName)
 
 		ELEnemyName EName = loadName(SName);
 
+		//LOG_ERROR(SName);
+
 		m_enemyPlaces.emplace_back(
 			EName,
 			Point(csv.get<int>(i,1),csv.get<int>(i,2))
 			);
 	}
+
+	//LOG_ERROR(m_enemyPlaces.size());
 
 	return true;
 }
@@ -324,11 +328,14 @@ void ELEnemyInfo::setEnemy(const ELEnemyName& Name, const Point& pos)
 			m_bossMaxlife = Data.HP;
 			m_enemies.emplace_back
 				(std::make_shared<ELSeaserpent>(Data.Name,Data.Size,Data.hitRect,Data.HP,pos));
+			//LOG_ERROR(L"seaser!!!");
 			break;
 		}
 		//////////
 
 	}
+
+	//LOG_ERROR(L"seaser!!!");
 }
 
 void ELEnemyInfo::update(const ELMap& map, const Point& playerpos, ELObjectInfo& object, const Point& camerapos, ELItem &item, ELAttack &attack)
@@ -336,7 +343,8 @@ void ELEnemyInfo::update(const ELMap& map, const Point& playerpos, ELObjectInfo&
 	//ìGÇè¡Ç∑
 	for(size_t i = 0;i<m_enemies.size();++i)
 	{
-		if(m_enemies[i]->isErased() || (!incamera(m_enemies[i]->getPos(),camerapos) && m_enemies[i]->getName() != ELEnemyName::darkbrave))
+		if(m_enemies[i]->isErased() || (!incamera(m_enemies[i]->getPos(),camerapos) 
+			&& !isBoss(m_enemyPlaces[i].Name)))
 		{
 			eraseEnemy(i);
 		}
@@ -358,7 +366,8 @@ void ELEnemyInfo::update(const ELMap& map, const Point& playerpos, ELObjectInfo&
 			}
 		}
 		*/
-		if((incamera(m_enemyPlaces[i].Pos,camerapos) || isBoss(m_enemyPlaces[i].Name))
+		if((incamera(m_enemyPlaces[i].Pos,camerapos) 
+			|| isBoss(m_enemyPlaces[i].Name))
 			&& !m_enemyPlaces[i].created)
 		{
 			setEnemy(m_enemyPlaces[i].Name,m_enemyPlaces[i].Pos);
@@ -368,7 +377,8 @@ void ELEnemyInfo::update(const ELMap& map, const Point& playerpos, ELObjectInfo&
 		bool creatflag = true;
 
 		if(m_enemyPlaces[i].created 
-			&& !incamera(m_enemyPlaces[i].Pos,camerapos))
+			&& !incamera(m_enemyPlaces[i].Pos,camerapos)
+			&& !isBoss(m_enemyPlaces[i].Name))
 		{
 			for(const auto& enemy : m_enemies)
 			{
@@ -461,8 +471,19 @@ void ELEnemyInfo::checkHit(const ELAttack& attack)//ìGÇ™çUåÇÇ…ìñÇΩÇÈ
 {
 	for(const auto& enemy : m_enemies)
 	{
-		if (!enemy->isDamaged()){
-			enemy->giveDamage(attack.getDamage(enemy->getHitRect(), ELShooter::Enemy));//damageÇ≠ÇÁÇ§
+		if (!enemy->isDamaged())
+		{
+			if (enemy->getName() == ELEnemyName::seaserpent)
+			{
+				enemy->giveDamage(attack.getDamage(enemy->getHitRect(), ELShooter::Enemy));//damageÇ≠ÇÁÇ§
+
+				for (size_t i = 0; i < enemy->getOptionEnemysSize();++i)
+				{
+					enemy->giveOptionEnemyDamage(attack.getDamage(enemy->getOptionEnemyHitRect(i), ELShooter::Enemy),i);//damageÇ≠ÇÁÇ§
+				}
+			}
+			else
+				enemy->giveDamage(attack.getDamage(enemy->getHitRect(), ELShooter::Enemy));//damageÇ≠ÇÁÇ§
 		}
 	}
 }
@@ -509,10 +530,13 @@ Point ELEnemyInfo::getBurstPos() const
 
 bool ELEnemyInfo::enemyIsDead() const
 {
+	bool flag = false;
 	for(auto &enemy : m_enemies)
 	{
-			return enemy->getEnemyState() == ELEnemyState::Dead;
+		if (enemy->getEnemyState() != ELEnemyState::Dead)
+			return false;
+
 	}
 
-	return false;
+	return true;
 }

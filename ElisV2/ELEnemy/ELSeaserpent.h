@@ -236,4 +236,7 @@ public:
 		return m_state;
 	}
 
+	int getOptionEnemysSize() const { return m_tentacles.size(); }
+	virtual Rect getOptionEnemyHitRect(int index){ return m_tentacles[index].getHitRect(); }
+	void giveOptionEnemyDamage(int damage, int index) { m_tentacles[index].giveDamage(damage); }
 };
