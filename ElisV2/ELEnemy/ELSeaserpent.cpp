@@ -564,7 +564,7 @@ void ELSeaserpentTentacle::update(const ELMap& map, const Point& playerpos, ELOb
 		m_pos.y = Min(m_pos.y + kSpeed / 2, m_startPos.y);
 
 		//•œŠˆ
-		if (m_frameCount>300)
+		if (m_frameCount>480)
 		{
 			m_HP = m_MaxHp;
 			m_state = ELEnemyState::Ready;

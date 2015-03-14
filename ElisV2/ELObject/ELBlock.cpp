@@ -68,6 +68,8 @@ bool ELBlock::isTouchable(const Point& head,const Point& foot)
 	//return Line(foot,head).intersects(m_hitRect);
 	int n =std::abs(foot.y-head.y);
 
+	return Line(foot, head).intersects(m_hitRect);
+	/*
 	for(int i=0;i<=n;++i)
 	{
 		if(Point(foot.x,foot.y - i).intersects(m_hitRect))
@@ -75,6 +77,7 @@ bool ELBlock::isTouchable(const Point& head,const Point& foot)
 			return true;	
 		}
 	}
+	*/
 
 	return false;
 }

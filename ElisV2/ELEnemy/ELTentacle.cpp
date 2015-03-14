@@ -56,11 +56,11 @@ void ELTentacle::update(const ELMap& map, const Point& playerpos, ELObjectInfo& 
 
 	m_oldState = m_state;
 
-	if(m_state == ELEnemyState::Dead)
+	if(m_state == ELEnemyState::Dead)//Ž€–S‚©‚ç•œŠˆ
 	{
 		m_pos.y = Min(m_pos.y + kSpeed/2, m_startPos.y);
 
-		if (m_frameCount>300)
+		if (m_frameCount>480)
 		{
 			m_HP = m_MaxHp;
 			m_state = ELEnemyState::Ready;

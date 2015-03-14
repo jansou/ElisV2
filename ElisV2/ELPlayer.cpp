@@ -570,7 +570,8 @@ void ELPlayer::FallProcess(const ELMap& map, ELObjectInfo& object, const Point &
 	const Point foot = footCollisionPos();
 	for (int i = 0; i <= m_gravity; ++i)
 	{
-		if (object.isTouchable(Point(head.x, head.y + i), Point(foot.x, foot.y + i), camerapos)
+		if (//object.isTouchable(Point(head.x, head.y + i), Point(foot.x, foot.y + i), camerapos)
+			object.isTouchable(Point(foot.x, foot.y + i), Point(foot.x, foot.y + i), camerapos)
 			|| map.isFloor(foot.x, foot.y + i))
 		{
 			m_elisRect.y += i;
@@ -599,17 +600,23 @@ void ELPlayer::IdentifyState(ELMap& map, ELObjectInfo& object, const Point &came
 		m_elisAttackState = ElisAttackState::Charge;
 	}
 
-	if (!(object.isTouchable(head, foot, camerapos) || (map.isFloor(foot.x, foot.y)))
+	//ê⁄ínÇµÇƒÇ¢ÇÈÇ©ÇÃîªíË
+	if (!(object.isTouchable(foot, foot, camerapos)) 
+		&& !(map.isFloor(foot.x, foot.y))
 		|| m_jumpH - m_gravity >0)//
 	{
 		m_elisState = ElisState::Jumping;
 		m_gravity = Min(m_gravity + kDrop, kMaxGravity);
 		return;
+	}//ÉWÉÉÉìÉv(â∫ç~)íÜÇ≈Ç†ÇÈÇ±Ç∆ÇÃîªíË
+	else
+	{
+		m_jumped = false;
+		m_gravity = kGravity0;
+		m_jumpH = 0;
 	}
 
-	m_jumped = false;
-	m_gravity = kGravity0;
-	m_jumpH = 0;
+
 
 	if (m_speed != 0)
 	{
@@ -683,10 +690,11 @@ void ELPlayer::draw(const Point& cameraPos)const
 		case ElisState::Jumping:
 			TextureAsset(L"texElisJump")(x, y, w, h).draw(pos, Alpha(a));
 			break;
+			/*
 		case ElisState::Falling:
 			TextureAsset(L"texElisJump")(x, y, w, h).draw(pos, Alpha(a));
 			break;
-
+			*/
 		case ElisState::Fire:
 		{
 			TextureAsset(L"texElisFire")

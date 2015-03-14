@@ -1,3 +1,3 @@
 temple,,,
-setstartpos,stage00,100,100
-door,233,642,stage01,200,713,Tmdoor.png
+setstartpos,stage00,70,720
+door,2270,720,stage01,200,713,Tmdoor.png

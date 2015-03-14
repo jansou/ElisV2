@@ -1,3 +1,4 @@
 freezedport,,,
 setstartpos,stage01,100,700,
 door,3930,579,stage05,195,238,Pdoor.png,
+door,150,710,stage04,640,590,Pbossdoor.png

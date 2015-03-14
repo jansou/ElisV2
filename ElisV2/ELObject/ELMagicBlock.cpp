@@ -91,7 +91,22 @@ bool ELMagicBlock::isTouchable(const Point& head,const Point& foot)
 
 	//return Line(foot,head).intersects(m_hitRect);
 	int n =std::abs(foot.y-head.y);
+	//return Line(foot, head).intersects(m_hitRect);
+	if (Line(foot, head).intersects(m_hitRect))
+	{
+		if (!m_broke && !m_Animed)
+		{
+			//LOGFMT_ERR("aaaaaaaaaaaaaaaaaaaaaaaa");
 
+			m_broke = true;
+			m_frameCount = 1;
+			return false;
+		}
+
+		return true;
+	}
+
+	/*
 	for(int i=0;i<=n;++i)
 	{
 		if(Point(foot.x,foot.y - i).intersects(m_hitRect))
@@ -108,7 +123,7 @@ bool ELMagicBlock::isTouchable(const Point& head,const Point& foot)
 			return true;	
 		}
 	}
-
+	*/
 	return false;
 }
 
