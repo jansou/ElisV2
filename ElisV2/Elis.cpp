@@ -33,6 +33,12 @@ void Elis::playingDraw()
 	player.draw(mycamera.getCameraPos());
 
 	attack.draw(mycamera.getCameraPos());
+	
+	//この辺に円形フェードイン
+	if (fade.CircleFadeIn())
+	{
+		fade.CircleFadeInDraw(player.getPlayerPos());
+	}
 }
 
 bool Elis::loadData(const String& mapName,const String& stageName)
@@ -294,11 +300,14 @@ bool Elis::update()
 								if (!loadData(m_mapName, map.getDestName()))	return false;
 
 								TextureAsset::ReleaseAll();
+
+								fade.setCircleFadeInFlag(true);
 							}
 						}
 						else if(map.update(player.getRect(), player.getState()))//ドア開けた
 						{
 							m_doorOpened = true;
+							fade.resetCount();
 							/*
 							player.setPos(map.getDestPos());
 

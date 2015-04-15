@@ -133,8 +133,8 @@ bool ELElisShoot3::isHit(const Rect& body)
 				Atan2(direction().y,direction().x)
 				)))
 		{
-			m_collided = true;
-			m_frameCount = 0;
+			//m_collided = true;
+			//m_frameCount = 0;
 			return true;
 		}
 	}

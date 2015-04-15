@@ -24,6 +24,7 @@
 # include "ELEnemy\ELRavenAcross.h"
 # include "ELEnemy\ELBlockMaker.h"
 # include "ELEnemy\ELTentacle.h"
+# include "ELEnemy\ELMinotaur.h"
 
 //Boss
 # include "ELEnemy\ELBigslime.h"
@@ -48,6 +49,7 @@ enum class ELEnemyName
 	ravenacross,
 	blockmaker,
 	tantacle,
+	minotaur,
 	////boss
 	bigslime,
 	seaserpent,

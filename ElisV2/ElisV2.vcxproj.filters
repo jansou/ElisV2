@@ -225,6 +225,9 @@
     <ClCompile Include="ELShoot\ELLongIce.cpp">
       <Filter>ソース ファイル\Shoot</Filter>
     </ClCompile>
+    <ClCompile Include="ELEnemy\ELMinotaur.cpp">
+      <Filter>ソース ファイル\Enemy</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Image Include="icon.ico">
@@ -699,6 +702,9 @@
     </ClInclude>
     <ClInclude Include="ELShoot\ELLongIce.h">
       <Filter>ヘッダー ファイル\Shoot</Filter>
+    </ClInclude>
+    <ClInclude Include="ELEnemy\ELMinotaur.h">
+      <Filter>ヘッダー ファイル\Enemy</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

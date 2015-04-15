@@ -85,6 +85,10 @@ ELEnemyName ELEnemyInfo::loadName(const String& Name) const
 	{
 		return ELEnemyName::tantacle;
 	}
+	else if (Name == L"minotaur")
+	{
+		return ELEnemyName::minotaur;
+	}
 	////////////boss
 	else if(Name==L"bigslime")
 	{
@@ -95,7 +99,8 @@ ELEnemyName ELEnemyInfo::loadName(const String& Name) const
 		return ELEnemyName::seaserpent;
 	}
 	////////////////
-	else {
+	else 
+	{
 		return ELEnemyName::null;
 	}
 }
@@ -299,6 +304,12 @@ void ELEnemyInfo::setEnemy(const ELEnemyName& Name, const Point& pos)
 		{
 			m_enemies.emplace_back
 				(std::make_shared<ELTentacle>(Data.Name, Data.Size, Data.hitRect, Data.HP, pos));
+			break;
+		}
+	case ELEnemyName::minotaur:
+		{
+			m_enemies.emplace_back
+				(std::make_shared<ELMinotaur>(Data.Name, Data.Size, Data.hitRect, Data.HP, pos));
 			break;
 		}
 		////////boss

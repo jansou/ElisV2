@@ -324,14 +324,14 @@ void ELSeaserpent::draw(const Point& camerapos, const Point& modifyDrawPos)const
 
 	if (m_state == ELEnemyState::Attacking)
 	{
-		TextureAsset(L"texELSeaserpent_seaser_body").draw(m_pos.x - 170 / 2, m_startPos.y + 100);
-		TextureAsset(L"texELSeaserpent_seaser_body_front").resize(170, m_pos.y - m_startPos.y).draw(m_pos.x - 170 / 2, m_startPos.y);
-		TextureAsset(L"texELSeaserpent_seaser_attack_head").draw(m_pos - Point(180, 260) / 2);
+		TextureAsset(L"texELSeaserpent_seaser_body").draw(m_pos.x - 170 / 2, m_startPos.y + 100, Alpha(a));
+		TextureAsset(L"texELSeaserpent_seaser_body_front").resize(170, 90 + m_pos.y - m_startPos.y).draw(m_pos.x - 170 / 2, m_startPos.y,Alpha(a));
+		TextureAsset(L"texELSeaserpent_seaser_attack_head").draw(m_pos - Point(180, 260) / 2, Alpha(a));
 	}
 	else
 	{
-		TextureAsset(L"texELSeaserpent_seaser_body").draw(m_pos.x - 170 / 2, m_startPos.y + 100);
-		TextureAsset(L"texELSeaserpent_seaser_head").draw(m_pos - Point(180, 260) / 2);
+		TextureAsset(L"texELSeaserpent_seaser_body").draw(m_pos.x - 170 / 2, m_startPos.y + 100, Alpha(a));
+		TextureAsset(L"texELSeaserpent_seaser_head").draw(m_pos - Point(180, 260) / 2, Alpha(a));
 	}
 	/*
 	drawTail_stay();
@@ -345,7 +345,7 @@ void ELSeaserpent::draw(const Point& camerapos, const Point& modifyDrawPos)const
 	}
 	
 
-	m_hitRect.drawFrame(10, 0, Palette::Black);
+	//m_hitRect.drawFrame(10, 0, Palette::Black);
 
 }
 

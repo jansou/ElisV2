@@ -1,23 +1,27 @@
-﻿2015/03/15 0:40:02 にビルドを開始しました。
+﻿2015/04/16 0:51:23 にビルドを開始しました。
      1>ノード 2 上のプロジェクト "C:\Users\akira\Desktop\projects\ElisV2\ElisV2\ElisV2.vcxproj" (Build ターゲット)。
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /Zi /nologo /W4 /WX- /sdl /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _WINDOWS /D _UNICODE /D UNICODE /Gm- /EHsc /MT /GS /Gy /arch:SSE2 /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt ELPlayer.cpp
-         ELPlayer.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /Zi /nologo /W4 /WX- /sdl /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _WINDOWS /D _UNICODE /D UNICODE /Gm- /EHsc /MT /GS /Gy /arch:SSE2 /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt ELEnemy\ELSeaserpent.cpp
+         ELSeaserpent.cpp
      1>c:\users\akira\desktop\projects\elisv2\elisv2\ELObject\ELBlock.h(38): warning C4100: 'foot' : 引数は関数の本体部で 1 度も参照されません。
      1>c:\users\akira\desktop\projects\elisv2\elisv2\ELObject\ELBlock.h(38): warning C4100: 'head' : 引数は関数の本体部で 1 度も参照されません。
      1>c:\users\akira\desktop\projects\elisv2\elisv2\ELObject\ELMagicBlock.h(39): warning C4100: 'foot' : 引数は関数の本体部で 1 度も参照されません。
      1>c:\users\akira\desktop\projects\elisv2\elisv2\ELObject\ELMagicBlock.h(39): warning C4100: 'head' : 引数は関数の本体部で 1 度も参照されません。
-     1>c:\users\akira\desktop\projects\elisv2\elisv2\ELEnemy\ELEnemy.h(62): warning C4100: 'index' : 引数は関数の本体部で 1 度も参照されません。
-     1>c:\users\akira\desktop\projects\elisv2\elisv2\ELEnemy\ELEnemy.h(63): warning C4100: 'index' : 引数は関数の本体部で 1 度も参照されません。
-     1>c:\users\akira\desktop\projects\elisv2\elisv2\ELEnemy\ELEnemy.h(63): warning C4100: 'damage' : 引数は関数の本体部で 1 度も参照されません。
-     1>ELPlayer.cpp(162): warning C4100: 'enemy' : 引数は関数の本体部で 1 度も参照されません。
-     1>ELPlayer.cpp(252): warning C4100: 'enemy' : 引数は関数の本体部で 1 度も参照されません。
-     1>ELPlayer.cpp(265): warning C4100: 'camerapos' : 引数は関数の本体部で 1 度も参照されません。
-     1>ELPlayer.cpp(265): warning C4100: 'object' : 引数は関数の本体部で 1 度も参照されません。
-     1>ELPlayer.cpp(265): warning C4100: 'map' : 引数は関数の本体部で 1 度も参照されません。
-     1>ELPlayer.cpp(269): warning C4100: 'cursor' : 引数は関数の本体部で 1 度も参照されません。
-     1>ELPlayer.cpp(403): warning C4239: 非標準の拡張機能が使用されています : '引数' : 's3d::Point' から 's3d::Point &' への変換です。
-                 非定数の参照は左辺値へのみバインドされます。
+     1>c:\users\akira\desktop\projects\elisv2\elisv2\elenemy\ELEnemy.h(62): warning C4100: 'index' : 引数は関数の本体部で 1 度も参照されません。
+     1>c:\users\akira\desktop\projects\elisv2\elisv2\elenemy\ELEnemy.h(63): warning C4100: 'index' : 引数は関数の本体部で 1 度も参照されません。
+     1>c:\users\akira\desktop\projects\elisv2\elisv2\elenemy\ELEnemy.h(63): warning C4100: 'damage' : 引数は関数の本体部で 1 度も参照されません。
+     1>ELEnemy\ELSeaserpent.cpp(11): warning C4100: 'Pos' : 引数は関数の本体部で 1 度も参照されません。
+     1>ELEnemy\ELSeaserpent.cpp(258): warning C4804: '*=' : 演算中の 'bool' 型の使用方法が安全ではありません
+     1>ELEnemy\ELSeaserpent.cpp(258): warning C4800: 'int' : ブール値を 'true' または 'false' に強制的に設定します (警告の処理)
+     1>ELEnemy\ELSeaserpent.cpp(298): warning C4100: 'playerpos' : 引数は関数の本体部で 1 度も参照されません。
+     1>ELEnemy\ELSeaserpent.cpp(304): warning C4100: 'camerapos' : 引数は関数の本体部で 1 度も参照されません。
+     1>ELEnemy\ELSeaserpent.cpp(304): warning C4100: 'object' : 引数は関数の本体部で 1 度も参照されません。
+     1>ELEnemy\ELSeaserpent.cpp(304): warning C4100: 'map' : 引数は関数の本体部で 1 度も参照されません。
+     1>ELEnemy\ELSeaserpent.cpp(551): warning C4100: 'camerapos' : 引数は関数の本体部で 1 度も参照されません。
+     1>ELEnemy\ELSeaserpent.cpp(551): warning C4100: 'item' : 引数は関数の本体部で 1 度も参照されません。
+     1>ELEnemy\ELSeaserpent.cpp(551): warning C4100: 'object' : 引数は関数の本体部で 1 度も参照されません。
+     1>ELEnemy\ELSeaserpent.cpp(551): warning C4100: 'map' : 引数は関数の本体部で 1 度も参照されません。
+     1>ELEnemy\ELSeaserpent.cpp(648): warning C4100: 'modifyDrawPos' : 引数は関数の本体部で 1 度も参照されません。
        Link:
          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\akira\Desktop\projects\ElisV2\Release\ElisV2.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\akira\Desktop\projects\ElisV2\Release\ElisV2.pdb" /SUBSYSTEM:WINDOWS /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\akira\Desktop\projects\ElisV2\Release\ElisV2.lib" /MACHINE:X86 /SAFESEH Release\RC.res
          Release\ELAttack.obj
@@ -29,6 +33,7 @@
          Release\ELBluecap.obj
          Release\ELBoneman.obj
          Release\ELDarkbrave.obj
+         Release\ELMinotaur.obj
          Release\ELRaven.obj
          Release\ELRavenAcross.obj
          Release\ELRedcap.obj
@@ -80,4 +85,4 @@
 
 ビルドに成功しました。
 
-経過時間 00:00:39.86
+経過時間 00:00:31.48

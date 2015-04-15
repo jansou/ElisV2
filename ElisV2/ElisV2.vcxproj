@@ -20,6 +20,7 @@
     <ClCompile Include="ELEnemy\ELBluecap.cpp" />
     <ClCompile Include="ELEnemy\ELBoneman.cpp" />
     <ClCompile Include="ELEnemy\ELDarkbrave.cpp" />
+    <ClCompile Include="ELEnemy\ELMinotaur.cpp" />
     <ClCompile Include="ELEnemy\ELRaven.cpp" />
     <ClCompile Include="ELEnemy\ELRavenAcross.cpp" />
     <ClCompile Include="ELEnemy\ELRedcap.cpp" />
@@ -188,6 +189,7 @@
     <ClInclude Include="ELEnemy\ELBoneman.h" />
     <ClInclude Include="ELEnemy\ELDarkbrave.h" />
     <ClInclude Include="ELEnemy\ELEnemy.h" />
+    <ClInclude Include="ELEnemy\ELMinotaur.h" />
     <ClInclude Include="ELEnemy\ELRaven.h" />
     <ClInclude Include="ELEnemy\ELRavenAcross.h" />
     <ClInclude Include="ELEnemy\ELRedcap.h" />
